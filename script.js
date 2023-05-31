@@ -80,23 +80,23 @@ ${books.cards
   .map((book, index) => {
     const { title, sub, text } = book;
     return `
-    <div class="card-container">
-    <article class="card">
-      <div class="number-container">${index + 1}</div>
-      <p class="sub">${sub}</p>
-      <h3 class="card-title">${title}</h3>
-      <div class="line"></div>
-      <div class="card-content">
-        <p class="text">${text}</p>
+    <article class="card-container">
+      <div class="card">
+        <div class="number-container">${index + 1}</div>
+        <p class="sub">${sub}</p>
+        <h3 class="card-title">${title}</h3>
+        <div class="line"></div>
+        <div class="card-content">
+          <p class="text">${text}</p>
+        </div>
       </div>
-      </article>
       <button type="button">
         ${books.button} 
         <span class="material-symbols-outlined btn-arrow">
           arrow_forward
         </span> 
         </button>
-      </div>
+      </article>
   `;
   })
   .join("")}
